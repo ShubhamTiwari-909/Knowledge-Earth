@@ -1,0 +1,30 @@
+.header {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  place-items: center;
+  height: 13rem;
+  background-image: url("https://nypost.com/wp-content/uploads/sites/2/2017/09/feature.jpg?quality=80&strip=all");
+  background-size: cover;
+}
+.logo {
+  color: whitesmoke;
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (min-width:200px){
+  .logo{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width:400px){
+  .logo{
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width:750px){
+  .logo{
+    font-size: 2.4rem;
+  }
+}

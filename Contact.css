@@ -1,0 +1,72 @@
+.contact-bg{
+    /* display properties */
+    height: 70vh;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1q2CBWgJyF54SNz-pxJLuj-qTDYdslGwxPg&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+
+    /* filter properties */
+    filter:blur(12px);
+}
+.contact-text{
+    /* display properties */
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:2;
+    padding:4rem 12rem;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.contacts {
+    /* display properties */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    justify-content:space-around;
+    justify-items: center;
+    margin: 5rem 0;
+}
+.contactIcons{
+    /* Typography properties */
+    font-size: 3.5rem;
+    color: rgb(252, 232, 232);
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width:200px){
+    .contactIcons{
+      font-size: 1.5rem;
+    }
+    .contact-text{
+        padding:1rem 4rem;
+    }
+  }
+  
+  @media screen and (min-width:400px){
+    .contactIcons{
+      font-size: 1.8rem;
+    }
+    .contact-text{
+        padding:2rem 6rem;
+    }
+  }
+  @media screen and (min-width:750px){
+    .contactIcons{
+      font-size: 2.4rem;
+    }
+    .contact-text{
+        padding:3rem 9rem;
+    }
+  }
+  @media screen and (min-width:1000px){
+    .contactIcons{
+      font-size: 3.5rem;
+    }
+    .contact-text{
+        padding:4rem 12rem;
+    }
+  }
